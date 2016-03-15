@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+<script  type="text/javascript" src="js/controller/noteController.js"></script>
+<body>
+
+<div ng-app="noteApp">
+
+<!--  -->
+<div ng-controller="noteController">
+  <h2>There are {{notes.length}} notes..</h2>
+  <ul ng-repeat="note in notes">
+  
+  {{note.note}} 
+  
+  </ul>
+<form ng-submit="saveNote()">
+  <p> 
+   text :<input type="textarea" ng-model="note"></p>
+    <input type="button" value="getNote" ng-click="getNotes();">
+   <input type="submit" value="submit">
+
+ 
+  
+  </form>
+  </div>
+</div>
+
+</body>
+ 
+</html> 

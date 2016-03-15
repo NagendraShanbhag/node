@@ -1,0 +1,18 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "test mean stack",
+  "main": "sever.js",
+  "dependencies": {
+    "mongoose": "^4.2.9",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "nagendra shanbhag",
+  "license": "ISC"
+}
